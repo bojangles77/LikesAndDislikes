@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>
+      Like and Dislike Buttons
+    </h1>
+    <div>
+      <button id="likeButton">
+        Likes:
+      </button>
+      <button id="dislikeButton">
+        Dislikes:
+      </button>
+    </div>
+
+    <script>
+      var button = document.getElementById("likeButton"),
+        count = 0;
+      button.onclick = function () {
+        count += 1;
+        button.innerHTML = "Likes: " + count;
+      };
+
+      var button2 = document.getElementById("dislikeButton"),
+        count2 = 0;
+      button2.onclick = function () {
+        count2 += 1;
+        button2.innerHTML = "Dislikes: " + count2;
+      };
+    </script>
+  </body>
+</html>
